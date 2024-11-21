@@ -1,0 +1,275 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "M1b M12 PN1b PN11 P1b P1e PN13 N1b N1e PN12 PN14 N3b N32 E001 N31 N33 PN3b PN32 N4b N42 N3e PN1e M11 M13 E002 N41 N4e PN31 PN33 PN32 N4b N42 E003 PN2b PN21 N5b N51 E004 N5e PN2e E005 M2b M21 PN4b PN41 N6b N6e PN4e M2e M1e"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><ul><li><a href='../Jg8i/Jg8i1.html'>채팅(서버)</a></li><li><a href='../Jg8i/Jg8i2.html'>채팅(클라이언트)</a></li><ul><li><a href='Jg8i2.html'>코드읽기</a></li><li><a href='Jg8i2a.html'>알고리즘</a></li><li><a href='Jg8i2k.html'>키워드</a></li><li><a href='Jg8i2b.html'>빈칸채우기</a></li><li><a href='Jg8i2s.html'>실행순서</a></li><li><a href='Jg8i2m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter18/ChatClient.java' target='code'>소스코드</a></li></ul><li><a href='../Jg8i/Jg8i3.html'>가전(서버)</a></li><li><a href='../Jg8i/Jg8i4.html'>가전(리모컨 클라이언트)</a></li><li><a href='../Jg8i/Jg8i5.html'>가전(TV 클라이언트)</a></li></ul><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>멀티클라이언트용 채팅 프로그램에서 네트워크 클라이언트 부분의 문제입니다 실행순서를 클릭하세요 </pre> 				
+<a href = "https://shyprogrammer351.github.io/ig3i/9.1_CHAT_Multi.pdf" >(시퀀스다이어그램 확인)</a>
+<pre> 
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre>
+<pre id="codeE001" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E001')">E001		<font color="green">// [클라이언트2]가 접속 요청하면 [서버]에서 네트워크 연결 초기화</font>
+</pre><pre id="codeE002" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E002')">E002		<font color="green">// [클라이언트2]에게 [서버]가 보낸 메시지([CHAT] [서버]안녕하세요) 도착</font>
+</pre><pre id="codeE003" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E003')">E003		<font color="green">// [클라이언트2]에서 메시지([CHAT] [클라이언트]반갑습니다) 입력</font>
+</pre><pre id="codeE004" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E004')">E004		<font color="green">// [클라이언트2]에서 [서버]로 메시지([CHAT] [클라이언트]반갑습니다) 전송</font>
+</pre><pre id="codeE005" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E005')">E005		<font color="green">// [클라이언트2]에서 프로그램 닫기(우측상단 X) 선택</font>
+
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.JFrame;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.Dimension;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.WindowAdapter;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.WindowEvent;
+</pre><pre id="code0" class="unselectable codeClass">	import chat.ChatNetwork;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class ChatClient
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="codeM1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M1b')">M1b		public static void main(String[] args)
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			String serverIP = "localhost";
+</pre><pre id="codeM11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M11')">M11			ChatNetwork panel =
+</pre><pre id="codeM12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M12')">M12			                     new ChatNetwork( serverIP );
+
+</pre><pre id="code0" class="unselectable codeClass">			JFrame frame = new JFrame( "채팅(클라이언트)" );
+</pre><pre id="code0" class="unselectable codeClass">			frame.getContentPane().add( panel );
+</pre><pre id="code0" class="unselectable codeClass">			frame.addWindowListener( new WindowAdapter() {
+</pre><pre id="codeM2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M2b')">M2b				public void windowClosing( WindowEvent e ) {
+</pre><pre id="codeM21" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M21')">M21					panel.close();
+</pre><pre id="codeM2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M2e')">M2e				}
+</pre><pre id="code0" class="unselectable codeClass">			} );
+</pre><pre id="code0" class="unselectable codeClass">			frame.setPreferredSize( new Dimension( 320, 445 ) );
+</pre><pre id="code0" class="unselectable codeClass">			frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+</pre><pre id="code0" class="unselectable codeClass">			frame.pack();
+</pre><pre id="code0" class="unselectable codeClass">			frame.setVisible(true);
+</pre><pre id="codeM13" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M13')">M13			<font color="green">// 이벤트 발생시 처리 준비중</font>
+</pre><pre id="codeM1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('M1e')">M1e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">	package chat;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.JOptionPane;
+</pre><pre id="code0" class="unselectable codeClass">	import network.Network;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class ChatNetwork extends ChatPanel implements Runnable
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private Network network;
+</pre><pre id="code0" class="unselectable codeClass">		private String  id;
+</pre><pre id="code0" class="unselectable codeClass">		private final String header = "[CHAT] ";
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="codePN1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN1b')">PN1b		public ChatNetwork( String serverIP )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="codePN11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN11')">PN11			super();
+</pre><pre id="code0" class="unselectable codeClass">			id = "[" + JOptionPane.showInputDialog( this, "아이디를 입력해주세요.", "아이디" ) + "]";
+
+</pre><pre id="codePN12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN12')">PN12			network =
+</pre><pre id="codePN13" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN13')">PN13			          new Network();
+</pre><pre id="codePN14" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN14')">PN14			network.connectAsClient( serverIP, this );
+</pre><pre id="code0" class="unselectable codeClass">			network.write( header + id + "님이 들어오셨습니다" );
+</pre><pre id="codePN1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN1e')">PN1e		}
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="codePN2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN2b')">PN2b		public void actionPerformed( ActionEvent event )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			String message = inputField.getText();
+</pre><pre id="codePN21" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN21')">PN21			network.write( header + id + message );
+</pre><pre id="code0" class="unselectable codeClass">			inputField.setText( "" );
+</pre><pre id="codePN2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN2e')">PN2e		}
+
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="codePN3b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN3b')">PN3b		public void run()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="codePN31" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN31')">PN31			for ( String message = null; ( message =
+</pre><pre id="codePN32" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN32')">PN32			                                          network.read() )
+</pre><pre id="code0" class="unselectable codeClass">			                                                          != null; )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				if ( !message.contains( header ) )
+</pre><pre id="code0" class="unselectable codeClass">					continue;
+
+</pre><pre id="code0" class="unselectable codeClass">				chatWindow.append( message.substring( header.length() ) + "\n" );
+</pre><pre id="codePN33" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN33')">PN33				chatWindow.setCaretPosition( chatWindow.getText().length() );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codePN3e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN3e')">PN3e		}
+
+</pre><pre id="codePN4b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN4b')">PN4b		public void close()
+</pre><pre id="code0" class="unselectable codeClass">	   	{
+</pre><pre id="code0" class="unselectable codeClass">			network.write( header + " " + id + "님이 나가셨습니다" );
+</pre><pre id="codePN41" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN41')">PN41			network.disconnect();
+</pre><pre id="codePN4e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('PN4e')">PN4e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">
+</pre><pre id="code0" class="unselectable codeClass">	package network;
+</pre><pre id="code0" class="unselectable codeClass">	import java.io.BufferedReader;
+</pre><pre id="code0" class="unselectable codeClass">	import java.io.InputStreamReader;
+</pre><pre id="code0" class="unselectable codeClass">	import java.io.PrintWriter;
+</pre><pre id="code0" class="unselectable codeClass">	import java.net.ServerSocket;
+</pre><pre id="code0" class="unselectable codeClass">	import java.net.Socket;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class Network
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		protected int serverPort;
+</pre><pre id="code0" class="unselectable codeClass">		protected ServerSocket serverSocket;
+</pre><pre id="code0" class="unselectable codeClass">		protected Socket socket;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">		private BufferedReader in;
+</pre><pre id="code0" class="unselectable codeClass">		private PrintWriter out;
+</pre><pre id="code0" class="unselectable codeClass">		private Thread waitForCounterpart;
+
+</pre><pre id="codeN1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N1b')">N1b		public Network()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			serverPort = 7700;
+</pre><pre id="code0" class="unselectable codeClass">			serverSocket = null;
+</pre><pre id="code0" class="unselectable codeClass">			socket = null;
+</pre><pre id="code0" class="unselectable codeClass">			in = null;
+</pre><pre id="code0" class="unselectable codeClass">			out = null;
+</pre><pre id="code0" class="unselectable codeClass">			waitForCounterpart = null;
+</pre><pre id="codeN1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N1e')">N1e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeN2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N2b')">N2b		public void connectAsServer( Runnable obj )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			try
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				serverSocket = new ServerSocket( serverPort );
+</pre><pre id="codeN21" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N21')">N21				socket =
+</pre><pre id="codeN22" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N22')">N22				         serverSocket.accept();
+</pre><pre id="code0" class="unselectable codeClass">				in = new BufferedReader( new InputStreamReader( socket.getInputStream() ) );
+</pre><pre id="code0" class="unselectable codeClass">				out = new PrintWriter( socket.getOutputStream(), true );
+</pre><pre id="code0" class="unselectable codeClass">				waitForCounterpart = new Thread( obj );
+</pre><pre id="codeN23" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N23')">N23				waitForCounterpart.start();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			catch ( Exception e )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeN2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N2e')">N2e		}
+
+</pre><pre id="codeN3b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N3b')">N3b		public void connectAsClient( String serverIP, Runnable obj )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			try
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="codeN31" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N31')">N31				socket =
+</pre><pre id="codeN32" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N32')">N32				         new Socket( serverIP, serverPort );
+</pre><pre id="code0" class="unselectable codeClass">				in = new BufferedReader( new InputStreamReader( socket.getInputStream() ));
+</pre><pre id="code0" class="unselectable codeClass">				out = new PrintWriter( socket.getOutputStream(), true );
+</pre><pre id="code0" class="unselectable codeClass">				waitForCounterpart = new Thread( obj );
+</pre><pre id="codeN33" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N33')">N33				waitForCounterpart.start();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			catch ( Exception e )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeN3e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N3e')">N3e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeN4b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N4b')">N4b		public String read()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			try
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				if ( this.isConnecting() == true )
+</pre><pre id="codeN41" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N41')">N41					return
+</pre><pre id="codeN42" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N42')">N42					       in.readLine(); <font color="green">// 네트워크에 상대편 데이터가 도착할 때까지 계속 대기</font>
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			catch ( Exception e )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="code0" class="unselectable codeClass">			return null;
+</pre><pre id="codeN4e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N4e')">N4e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeN5b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N5b')">N5b		public void write( String data )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			try
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				if ( this.isConnecting() == true )
+</pre><pre id="codeN51" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N51')">N51					out.println( data );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			catch ( Exception e )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeN5e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N5e')">N5e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeN6b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N6b')">N6b		public void disconnect()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			try
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				if( waitForCounterpart != null )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code0" class="unselectable codeClass">					waitForCounterpart.interrupt();
+</pre><pre id="code0" class="unselectable codeClass">					waitForCounterpart = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if( in != null )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code0" class="unselectable codeClass">					in.close();
+</pre><pre id="code0" class="unselectable codeClass">					in=null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if( out != null )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code0" class="unselectable codeClass">					out.flush();
+</pre><pre id="code0" class="unselectable codeClass">					out.close();
+</pre><pre id="code0" class="unselectable codeClass">					out = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if( socket != null )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code0" class="unselectable codeClass">					socket.close();
+</pre><pre id="code0" class="unselectable codeClass">					socket = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if( serverSocket != null )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code0" class="unselectable codeClass">					serverSocket.close();
+</pre><pre id="code0" class="unselectable codeClass">					serverSocket = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			catch ( Exception e )
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeN6e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('N6e')">N6e		}
+
+</pre><pre id="code0" class="unselectable codeClass">		public boolean isConnecting()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			if ( ( socket != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( in != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( out != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( waitForCounterpart != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( waitForCounterpart.getState() != Thread.State.TERMINATED ) )
+</pre><pre id="code0" class="unselectable codeClass">				return true;
+</pre><pre id="code0" class="unselectable codeClass">			else
+</pre><pre id="code0" class="unselectable codeClass">				return false;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">
+</pre><pre id="code0" class="unselectable codeClass">	package chat;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class ChatPanel extends JPanel implements ActionListener
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		protected JTextArea  chatWindow;
+</pre><pre id="code0" class="unselectable codeClass">		protected JTextField inputField;
+
+</pre><pre id="codeP1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P1b')">P1b		public ChatPanel()
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow = new JTextArea();
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow.setBackground( Color.lightGray );
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow.setEditable( false );
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow.setLineWrap( true );
+
+</pre><pre id="code0" class="unselectable codeClass">			JScrollPane scroll = new JScrollPane( chatWindow );
+</pre><pre id="code0" class="unselectable codeClass">			scroll.setPreferredSize( new Dimension( 290, 360 ) );
+</pre><pre id="code0" class="unselectable codeClass">			add( scroll );
+
+</pre><pre id="code0" class="unselectable codeClass">			inputField = new JTextField();
+</pre><pre id="code0" class="unselectable codeClass">			inputField.setPreferredSize( new Dimension( 290, 30 ) );
+</pre><pre id="code0" class="unselectable codeClass">			inputField.addActionListener( this );
+</pre><pre id="code0" class="unselectable codeClass">			inputField.requestFocus();
+</pre><pre id="code0" class="unselectable codeClass">			add( inputField );
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="code0" class="unselectable codeClass">			setVisible( true );
+</pre><pre id="codeP1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P1e')">P1e		}
+
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="codeP2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P2b')">P2b		public void actionPerformed( ActionEvent e )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			String userUtterance = inputField.getText();
+</pre><pre id="code0" class="unselectable codeClass">			inputField.setText( "" );
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow.append( "[사용자] " + userUtterance + "\n" );
+</pre><pre id="code0" class="unselectable codeClass">			chatWindow.setCaretPosition( chatWindow.getText().length() );
+</pre><pre id="codeP2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P2e')">P2e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "sP3d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

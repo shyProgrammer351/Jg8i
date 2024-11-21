@@ -1,0 +1,319 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "windowClosing","windowClosed" ], [ "run" ], [ "ServerSocket" ], [ "Socket" ], [ "ServerSocket" ], [ "Socket" ], [ "Thread" ], [ "Runnable" ], [ "ServerSocket" ], [ "accept" ], [ "Thread" ], [ "start" ], [ "Runnable" ], [ "Socket" ], [ "Thread" ], [ "start" ], [ "interrupt","interrupts" ], [ "Thread" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><ul><li><a href='../Jg8i/Jg8i1.html'>채팅(서버)</a></li><li><a href='../Jg8i/Jg8i2.html'>채팅(클라이언트)</a></li><li><a href='../Jg8i/Jg8i3.html'>가전(서버)</a></li><li><a href='../Jg8i/Jg8i4.html'>가전(리모컨 클라이언트)</a></li><ul><li><a href='Jg8i4.html'>코드읽기</a></li><li><a href='Jg8i4a.html'>알고리즘</a></li><li><a href='Jg8i4k.html'>키워드</a></li><li><a href='Jg8i4b.html'>빈칸채우기</a></li><li><a href='Jg8i4s.html'>실행순서</a></li><li><a href='Jg8i4m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter18/RemoteControllerClient.java' target='code'>소스코드</a></li></ul><li><a href='../Jg8i/Jg8i5.html'>가전(TV 클라이언트)</a></li></ul><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>멀티클라이언트용 리모컨 프로그램에서 클라이언트(리모컨) 부분의 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				
+<a href = "https://shyprogrammer351.github.io/ig3i/9.4_REMOTE_Multi.pdf" >(시퀀스다이어그램 확인)</a>
+<pre> 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import javax.swing.JFrame; 
+import java.awt.event.WindowAdapter; 
+import java.awt.event.WindowEvent; 
+import remoteControl.RemoteControlNetwork; 
+ 
+public class RemoteControllerClient 
+{ 
+	public static void main(String[] args)  
+	{ 
+		final String imagePath = "C:\\Users\\user\\Downloads\\JAVA-main\\src\\remoteControl\\image\\"; 
+		String serverIP = "localhost";			 
+		RemoteControlNetwork panel =  
+		                                  new RemoteControlNetwork( imagePath, serverIP ); 
+ 
+		JFrame frame = new JFrame( "리모컨(클라이언트)" ); 
+		frame.getContentPane().add( panel ); 
+		frame.addWindowListener( new WindowAdapter() { 
+			public void <input id='blank0' type='text' required minlength='1' maxlength='30' size='13' onchange='sP3f6(0)'>( WindowEvent e ) {  
+				panel.close(); 
+			} 
+		} ); 
+		frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); 
+		frame.pack(); 
+		frame.setVisible( true );		 
+		// 이벤트 발생시 처리 준비중 
+	} 
+} 
+ 
+package remoteControl; 
+import java.awt.event.ActionEvent; 
+import network.Network; 
+ 
+public class RemoteControlNetwork extends RemoteControllerPanel implements Runnable 
+{	 
+	private Network network; 
+	private String  id; 
+	private final String header = "[RMTC] "; 
+ 
+	public RemoteControlNetwork( String imgPath, String serverIP ) 
+	{ 
+		super( imgPath ); 
+		connectAsClient( serverIP, this.getClass().getSimpleName() ); 
+	} 
+ 
+	public RemoteControlNetwork( String imgPath, RemoteControl appliance, String serverIP ) 
+	{ 
+		super( imgPath, appliance ); 
+		connectAsClient( serverIP, appliance.getClass().getSimpleName() ); 
+	} 
+ 
+ 
+	public void connectAsClient( String serverIP, String applianceName ) 
+	{ 
+		id = "[" + applianceName +"]"; 
+		network =  
+		          new Network(); 
+		network.connectAsClient( serverIP, this ); 
+	} 
+ 
+	@Override 
+	public void actionPerformed( ActionEvent event ) 
+	{ 
+		String message = "";			                  
+		if ( event.getSource() == button[POWER] )   
+			message = header + "POWER"; 
+		else if ( event.getSource() == button[UP] )  
+			message = header + "UP"; 
+		else if ( event.getSource() == button[DOWN] )  
+			message = header + "DOWN"; 
+		else if ( event.getSource() == button[LEFT] )  
+			message = header + "LEFT"; 
+		else if ( event.getSource() == button[RIGHT] )  
+			message = header + "RIGHT"; 
+ 
+		network.write( message ); 
+	} 
+ 
+	@Override 
+	public void <input id='blank1' type='text' required minlength='1' maxlength='30' size='3' onchange='sP3f6(1)'>()   
+	{	 
+		for ( String message = null; ( message = 
+		                                          network.read()  
+		                                                             ) != null; )  
+		{ 
+			if ( !message.contains( header ) ) 
+				continue; 
+			else if ( message.contains( "POWER" ) && ( appliance != null ) ) 
+				appliance.clickPower(); 
+			else if ( message.contains( "UP" ) && ( appliance != null ) )		 
+				appliance.clickUp(); 
+			else if ( message.contains( "DOWN" ) && ( appliance != null ) ) 
+				appliance.clickDown(); 
+			else if ( message.contains( "LEFT" ) && ( appliance != null ) ) 
+				appliance.clickLeft(); 
+			else if ( message.contains( "RIGHT" ) && ( appliance != null ) ) 
+				appliance.clickRight(); 
+		}   
+	} 
+	 
+	public void close()   
+   	{ 
+		network.write( header + id + " 네트워크 연결 종료" ); 
+		network.disconnect(); 
+	} 
+} 
+package network; 
+import java.io.BufferedReader; 
+import java.io.InputStreamReader; 
+import java.io.PrintWriter; 
+import java.net.<input id='blank2' type='text' required minlength='1' maxlength='30' size='12' onchange='sP3f6(2)'>; 
+import java.net.<input id='blank3' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(3)'>; 
+ 
+public class Network  
+{ 
+	protected int serverPort; 
+	protected <input id='blank4' type='text' required minlength='1' maxlength='30' size='12' onchange='sP3f6(4)'> serverSocket;  
+	protected <input id='blank5' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(5)'> socket;  
+	 
+	private BufferedReader in; 
+	private PrintWriter out;  
+	private <input id='blank6' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(6)'> waitForCounterpart;  
+ 
+	public Network() 
+	{	 
+		serverPort = 7700; 
+		serverSocket = null; 
+		socket = null; 
+		in = null; 
+		out = null; 
+		waitForCounterpart = null; 
+	} 
+	 
+	public void connectAsServer( <input id='blank7' type='text' required minlength='1' maxlength='30' size='8' onchange='sP3f6(7)'> obj )   
+	{ 
+		try  
+		{ 
+			serverSocket = new <input id='blank8' type='text' required minlength='1' maxlength='30' size='12' onchange='sP3f6(8)'>( serverPort );  
+			socket =  
+			         serverSocket.<input id='blank9' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(9)'>();    
+			in = new BufferedReader( new InputStreamReader( socket.getInputStream() ) ); 
+			out = new PrintWriter( socket.getOutputStream(), true ); 
+			waitForCounterpart = new <input id='blank10' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(10)'>( obj );  
+			waitForCounterpart.<input id='blank11' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(11)'>();   
+		} 
+		catch ( Exception e ) 
+		{ 
+			e.printStackTrace(); 
+		} 
+	}  
+ 
+	public void connectAsClient( String serverIP, <input id='blank12' type='text' required minlength='1' maxlength='30' size='8' onchange='sP3f6(12)'> obj )   
+	{ 
+		try  
+		{ 
+			socket =  
+			         new <input id='blank13' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(13)'>( serverIP, serverPort );  
+			in = new BufferedReader( new InputStreamReader( socket.getInputStream() )); 
+			out = new PrintWriter( socket.getOutputStream(), true ); 
+			waitForCounterpart = new <input id='blank14' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(14)'>( obj );  
+			waitForCounterpart.<input id='blank15' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(15)'>();	 
+		}  
+		catch ( Exception e ) 
+		{ 
+			e.printStackTrace(); 
+		} 
+	} 
+	 
+	public String read()  
+	{ 
+		try  
+		{ 
+			if ( this.isConnecting() == true ) 
+				return  
+				       in.readLine();
+		}  
+		catch ( Exception e ) 
+		{ 
+			e.printStackTrace(); 
+		} 
+		 
+		return null; 
+	} 
+	 
+	public void write( String data )  
+	{ 
+		try  
+		{ 
+			if ( this.isConnecting() == true ) 
+				out.println( data ); 
+		}  
+		catch ( Exception e ) 
+		{ 
+			e.printStackTrace(); 
+		}	 
+	} 
+	 
+	public void disconnect()  
+	{ 
+		try  
+		{ 
+			if( waitForCounterpart != null ) 
+			{ 
+				waitForCounterpart.<input id='blank16' type='text' required minlength='1' maxlength='30' size='9' onchange='sP3f6(16)'>();	   
+				waitForCounterpart = null; 
+			} 
+			if( in != null ) 
+			{ 
+				in.close(); 
+				in=null; 
+			}			 
+			if( out != null ) 
+			{ 
+				out.flush(); 
+				out.close(); 
+				out = null; 
+			} 
+			if( socket != null ) 
+			{ 
+				socket.close(); 
+				socket = null; 
+			} 
+			if( serverSocket != null ) 
+			{ 
+				serverSocket.close(); 
+				serverSocket = null; 
+			} 
+		}  
+		catch ( Exception e ) 
+		{ 
+			e.printStackTrace(); 
+		} 
+	} 
+ 
+	public boolean isConnecting()  
+	{ 
+		if ( ( socket != null )  
+				&& ( in != null )  
+				&& ( out != null )  
+				&& ( waitForCounterpart != null )  
+				&& ( waitForCounterpart.getState() != <input id='blank17' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(17)'>.State.TERMINATED ) )    
+			return true; 
+		else 
+			return false; 
+	} 
+} 
+package remoteControl; 
+import javax.swing.*; 
+import java.awt.*; 
+import java.awt.event.*; 
+ 
+ 
+ 
+public class RemoteControllerPanel extends JPanel implements ActionListener  
+{ 
+	protected RemoteControl appliance; 
+	protected JButton[] button;	 
+	public final static int POWER = 0; 
+	public final static int UP = 1; 
+	public final static int DOWN = 2; 
+	public final static int LEFT = 3; 
+	public final static int RIGHT = 4; 
+ 
+	public RemoteControllerPanel( String imgPath, RemoteControl appliance ) 
+	{ 
+		this( imgPath ); 
+		this.appliance = appliance; 
+	} 
+ 
+	public RemoteControllerPanel( String imgPath )					   
+	{ 
+		this.appliance = null; 
+ 
+		final String[] strButton = { "power.gif", "up.gif", "down.gif", "left.gif", "right.gif" }; 
+		button = new JButton[strButton.length]; 
+		for ( int i = 0; i &lt; strButton.length; i++ ) 
+		{ 
+			button[i] = new JButton( new ImageIcon( new ImageIcon( imgPath + strButton[i] ).getImage().getScaledInstance( 30, 30, Image.SCALE_SMOOTH ) ) ); 
+			button[i].addActionListener( this );  
+		} 
+ 
+		this.setPreferredSize( new Dimension( 240, 120 ) );		 
+		this.setLayout( new BorderLayout() ); 
+		this.add( button[POWER], BorderLayout.CENTER ); 
+		this.add( button[UP   ], BorderLayout.NORTH ); 
+		this.add( button[DOWN ], BorderLayout.SOUTH ); 
+		this.add( button[LEFT ], BorderLayout.WEST ); 
+		this.add( button[RIGHT], BorderLayout.EAST );    
+	} 					 
+ 
+	@Override 
+	public void actionPerformed( ActionEvent event ) 
+	{ 
+		if ( ( event.getSource() == button[POWER] ) && ( appliance != null ) ) 
+			appliance.clickPower(); 
+		else if ( ( event.getSource() == button[UP] ) && ( appliance != null ) ) 
+			appliance.clickUp(); 
+		else if ( ( event.getSource() == button[DOWN] ) && ( appliance != null ) ) 
+			appliance.clickDown(); 
+		else if ( ( event.getSource() == button[LEFT] ) && ( appliance != null ) ) 
+			appliance.clickLeft(); 
+		else if ( ( event.getSource() == button[RIGHT] ) && ( appliance != null ) ) 
+			appliance.clickRight(); 
+	}	 
+} 
+package remoteControl; 
+ 
+public interface RemoteControl 
+{ 
+	public final boolean ON = true; 
+	public final boolean OFF = false;	 
+	public String clickPower(); 
+	public String clickUp(); 
+	public String clickDown(); 
+	public String clickLeft(); 
+	public String clickRight(); 
+} 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
